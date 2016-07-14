@@ -12,19 +12,40 @@
     android:id="@+id/cardViewMascota">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <ImageView
             android:layout_width="@dimen/imagen_width"
             android:layout_height="@dimen/imagen_height"
+            android:layout_gravity="center"
             android:id="@+id/imagenMascota"/>
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/nombreMascota"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/numLikesMascota"/>
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/hueso_width"
+                android:layout_height="@dimen/hueso_height"
+                android:id="@+id/imagenVotar"
+                android:src="@drawable/hueso_votar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="@dimen/texto_nombre"
+                android:layout_gravity="start"
+                android:id="@+id/nombreMascota"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/numLikesMascota"/>
+            <ImageView
+                android:layout_width="@dimen/hueso_width"
+                android:layout_height="@dimen/hueso_height"
+                android:layout_gravity="end"
+                android:id="@+id/imagenVotos"
+                android:src="@drawable/hueso_votos"/>
+        </LinearLayout>
     </LinearLayout>
 
 </android.support.v7.widget.CardView>
