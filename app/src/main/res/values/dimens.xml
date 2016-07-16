@@ -7,4 +7,5 @@
     <dimen name="hueso_height">30dp</dimen>
     <dimen name="hueso_width">30dp</dimen>
     <dimen name="texto_nombre">300dp</dimen>
+    <dimen name="action_bar">4dp</dimen>
 </resources>
