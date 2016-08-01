@@ -36,8 +36,10 @@ public class FavActivity extends AppCompatActivity {
 
     private void inicializaMascotas() {
         this.mascotaList = new ArrayList();
+        this.mascotaList.add(new Mascota(R.drawable.perro1, "perrete 1", 0));
         this.mascotaList.add(new Mascota(R.drawable.perro2, "perrete 2", 0));
+        this.mascotaList.add(new Mascota(R.drawable.perro3, "perrete 3", 0));
         this.mascotaList.add(new Mascota(R.drawable.perro4, "perrete 4", 0));
-        this.mascotaList.add(new Mascota(R.drawable.perro6, "perrete 6", 0));
+        this.mascotaList.add(new Mascota(R.drawable.perro5, "perrete 5", 0));
     }
 }
